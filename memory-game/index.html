@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet"/>
+    <title>Memory game</title>
+  </head>
+  <body>
+    <header class="container header-container">
+      <h1>Memory game</h1>
+      <img src="./assets/svg/settings.svg" alt="" class="setting-button" />
+    </header>
+    <main class="container main-container">
+      <div class="game-container">
+        <button class="start-button">Start</button>
+        <div class="cards-container"></div>
+        <div class="stop-game">
+          <p class="modal-title">You win!</p>
+          <p class="win-time">Your time: <span class="win-time-value"></span></p>
+          <p class="win-time">Your moves: <span class="win-move-value"></span></p>
+          <form class="win-name">
+            <input
+              type="text"
+              placeholder="enter your name"
+              class="win-name-input"/>
+            <button type="submit">Save</button>
+          </form>
+          <button class="new-game-button">New game</button>
+        </div>
+        <div class="results-modal">
+          <p class="modal-title">Table Results</p>
+          <div class="results-table"></div>
+          <button class="new-game-button">New game</button>
+        </div>
+        <div class="settings-container">
+          <p class="modal-title">Settings</p>
+          <div class="complexity-container">
+            <p class="complexity is-active">Easy</p>
+            <p class="complexity">Medium</p>
+            <p class="complexity">Hard</p>
+          </div>
+          <div class="cover-container">
+            <img src="./assets/img/marvel/16.jpg" alt="marvel" class="cover is-active"/>
+            <img src="./assets/img/dc/16.jpg" alt="dc" class="cover" />
+          </div>
+          <button class="new-game-button">New game</button>
+        </div>
+        <span class="close-button">&#10006;</span>
+      </div>
+      <div class="score-container">
+        <p class="results-table-button">Results table</p>
+        <p class="score">Your time: <span class="time">00:00</span></p>
+        <p class="moves">Number of moves: <span class="move">0</span></p>
+      </div>
+    </main>
+    <footer class="container footer-container">
+      <div class="footer-date">
+        <p>©</p>
+        <p>2022</p>
+        <p><a class="footer-link" href="https://github.com/Philonena">github</a></p>
+      </div>
+      <p class="footer-text"><a class="footer-link" href="https://rs.school/js-stage0/">Rolling Scopes School</a></p>
+    </footer>
+    
+    <script src="./index.js"></script>
+  </body>
+</html>
